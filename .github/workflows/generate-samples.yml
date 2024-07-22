@@ -1,0 +1,46 @@
+name: generate sample pdf files from themes
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    # Find all css files in themes directory, and set them to $CSS_FILES as comma-separated string.
+    - name: find css files
+      run: |
+        CSS_FILES=$(find themes -name '*.css')
+        CSS_FILES=$(echo "$CSS_FILES" | tr '\n' ',')
+        echo "CSS_FILES=$CSS_FILES" >> $GITHUB_ENV
+
+    - name: generate pdf for each css
+      run: |
+        : # Split $CSS_FILES by comma, and set them to $CSS_FILES array.
+        IFS=',' read -ra CSS_FILES <<< "$CSS_FILES"
+        : # Generate PDF files for each CSS file.
+        for CSS_FILE in "${CSS_FILES[@]}"; do
+          THEME_NAME=$(basename "$CSS_FILE" .css)
+          docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli \
+            sample.md \
+            --theme $CSS_FILE \
+            --pdf \
+            --allow-local-files \
+            --output "samples/$THEME_NAME.pdf"
+        done
+
+    - name: commit & push
+      run: |
+        if ! git diff --exit-code --quiet
+        then
+          git add -A
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -m "update demo files"
+          git push
+        fi
