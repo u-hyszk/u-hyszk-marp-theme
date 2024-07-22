@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+theme: freshgreen
 footer: "Sample Marp Slides Footer"
 math: Latex
 ---
