@@ -1,19 +1,22 @@
 ---
 marp: true
 paginate: true
+theme: freshgreen
 footer: "Sample Marp Slides Footer"
 math: Latex
 ---
 
-<!-- _class: lead -->
+<!-- _class: title -->
 
 # Marp サンプルスライド
 
-<br>
+## サブタイトル
 
-**u-hyszk**
-XXX Univ.
-YYYY/MM/DD
+### **u-hyszk**
+
+### XXX Univ
+
+### YYYY/MM/DD
 
 ---
 

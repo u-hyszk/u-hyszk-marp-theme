@@ -22,44 +22,52 @@ ul ul {
   font-size: 0.9em;
 }
 
-section.lead h1 {
+/* title section */
+section.title h1 { /* For title */
   color: #82be28;
   text-align: left;
 }
-section.lead h1 strong {
-  -webkit-text-stroke: 1px #82be28;
-}
-section.lead h2 {
+section.title h2 { /* For Subtitle */
   color: #82be28;
   text-align: left;
 }
-section.lead h2 strong {
-  -webkit-text-stroke: 1px #82be28;
-}
-section.lead h3 {
-  color: #82be28;
-  text-align: left;
-}
-section.lead h3 strong {
-  -webkit-text-stroke: 1px #82be28;
-}
-section.lead h4 {
-  color: #82be28;
-  text-align: left;
-}
-section.lead h4 strong {
-  -webkit-text-stroke: 1px #82be28;
-}
-section.lead h5 {
-  color: #82be28;
-  text-align: left;
-}
-section.lead h5 strong {
-  -webkit-text-stroke: 1px #82be28;
-}
-section.lead p {
+section.title h3 { /* For Name */
   text-align: right;
 }
+section.title h4 {
+  text-align: right;
+}
+section.title h5 {
+  text-align: right;
+}
+section.title p {
+  text-align: right;
+}
+
+
+/* text-align-center section */
+section.text-align-center h1 {
+  color: #82be28;
+  text-align: center;
+}
+section.text-align-center h2 {
+  color: #82be28;
+  text-align: center;
+}
+section.text-align-center h3 {
+  text-align: center;
+}
+section.text-align-center h4 {
+  text-align: center;
+}
+section.text-align-center h5 {
+  text-align: center;
+}
+section.text-align-center p {
+  text-align: center;
+}
+
+/* all section */
 
 header {
   background-color: #82be28;
@@ -74,22 +82,8 @@ img[alt~="center"] {
   margin: 0 auto;
 }
 
-/* Psuedo Footnote */
-blockquote {
-  max-width: 90%;
-  border-top: 0.1em dashed #555;
-  font-size: 60%;
-  position: absolute;
-  bottom: 20px;
-}
-blockquote::before {
-  content: "";
-}
-blockquote::after {
-  content: "";
-}
-
 /* Code block */
 code {
   font-family: 'Source Code Pro', monospace;
+  font-size: 0.7em;
 }
