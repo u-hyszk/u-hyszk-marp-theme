@@ -47,8 +47,6 @@ section.title p {
 
 /* chapter section */
 section.chapter {
-  display: flex;
-  flex-direction: column;
   justify-content: center; /* 上下中央に配置 */
   align-items: center;     /* 左右中央に配置 */
   text-align: center;      /* テキストを中央揃え */
