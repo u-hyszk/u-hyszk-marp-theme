@@ -46,16 +46,17 @@ section.title p {
 
 
 /* chapter section */
-section.chapter {
+section.chapter h1 {
+  color: #82be28;
   justify-content: center; /* 上下中央に配置 */
   align-items: center;     /* 左右中央に配置 */
   text-align: center;      /* テキストを中央揃え */
 }
-section.chapter h1 {
-  color: #82be28;
-}
 section.chapter h2 {
   color: #82be28;
+  justify-content: center; /* 上下中央に配置 */
+  align-items: center;     /* 左右中央に配置 */
+  text-align: center;      /* テキストを中央揃え */
 }
 
 /* all section */
