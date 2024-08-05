@@ -12,7 +12,7 @@ math: Latex
 
 ## サブタイトル
 
-### **u-hyszk**
+### u-hyszk
 
 ### XXX Univ
 
@@ -22,13 +22,15 @@ math: Latex
 
 <!-- _header: 目次 -->
 
-1. 見出し
-2. 箇条書き
-3. 脚注
-4. コードブロック
-5. 画像
-6. Vegaで作成した画像(svg形式)
-7. Draw.ioで作成した画像(svg形式)
+1. Chapter 1
+2. Chapter 2
+3. Chapter 3
+
+---
+
+<!-- _class: text-align-center -->
+
+# 中央に大きく表示
 
 ---
 
