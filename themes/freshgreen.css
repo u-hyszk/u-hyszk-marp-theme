@@ -22,25 +22,25 @@ ul ul {
   font-size: 0.9em;
 }
 
-/* title section */
-section.title h1 { /* For title */
+/* lead section */
+section.lead h1 { /* For title */
   color: #82be28;
   text-align: left;
 }
-section.title h2 { /* For Subtitle */
+section.lead h2 { /* For Subtitle */
   color: #82be28;
   text-align: left;
 }
-section.title h3 { /* For Name */
+section.lead h3 { /* For Name */
   text-align: right;
 }
-section.title h4 {
+section.lead h4 {
   text-align: right;
 }
-section.title h5 {
+section.lead h5 {
   text-align: right;
 }
-section.title p {
+section.lead p {
   text-align: right;
 }
 
@@ -48,14 +48,10 @@ section.title p {
 /* chapter section */
 section.chapter h1 {
   color: #82be28;
-  justify-content: center; /* 上下中央に配置 */
-  align-items: center;     /* 左右中央に配置 */
   text-align: center;      /* テキストを中央揃え */
 }
 section.chapter h2 {
   color: #82be28;
-  justify-content: center; /* 上下中央に配置 */
-  align-items: center;     /* 左右中央に配置 */
   text-align: center;      /* テキストを中央揃え */
 }
 

@@ -6,7 +6,7 @@ footer: "Sample Marp Slides Footer"
 math: Latex
 ---
 
-<!-- _class: title -->
+<!-- _class: lead -->
 
 # Marp サンプルスライド
 
@@ -31,6 +31,11 @@ math: Latex
 <!-- _class: chapter -->
 
 <!-- _footer: ""-->
+
+<br>
+<br>
+<br>
+<br>
 
 # なんかいい感じの背景
 
