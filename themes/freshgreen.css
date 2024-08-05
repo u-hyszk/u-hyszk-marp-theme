@@ -45,32 +45,32 @@ section.title p {
 }
 
 
-/* text-align-center section */
-section.text-align-center h1 {
+/* chapter section */
+section.chapter h1 {
   color: #82be28;
   text-align: center;
-  padding: 0;
+  justify-content: center;
 }
-section.text-align-center h2 {
+section.chapter h2 {
   color: #82be28;
   text-align: center;
-  padding: 0;
+  justify-content: center;
 }
-section.text-align-center h3 {
+section.chapter h3 {
   text-align: center;
-  padding: 0;
+  justify-content: center;
 }
-section.text-align-center h4 {
+section.chapter h4 {
   text-align: center;
-  padding: 0;
+  justify-content: center;
 }
-section.text-align-center h5 {
+section.chapter h5 {
   text-align: center;
-  padding: 0;
+  justify-content: center;
 }
-section.text-align-center p {
+section.chapter p {
   text-align: center;
-  padding: 0;
+  justify-content: center;
 }
 
 /* all section */
@@ -82,11 +82,11 @@ header {
   font-weight: 700;
 }
 
-
 img[alt~="center"] {
   display: block;
   margin: 0 auto;
 }
+
 
 /* Code block */
 code {

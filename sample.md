@@ -28,9 +28,13 @@ math: Latex
 
 ---
 
-<!-- _class: text-align-center -->
+<!-- _class: chapter -->
 
-# 中央に大きく表示
+<!-- _footer: ""-->
+
+# なんかいい感じの背景
+
+![bg](imgs/background.png)
 
 ---
 
