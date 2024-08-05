@@ -34,7 +34,7 @@ math: Latex
 
 # なんかいい感じの背景
 
-![bg](imgs/background.png)
+![bg auto](imgs/background.png)
 
 ---
 
